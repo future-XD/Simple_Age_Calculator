@@ -23,7 +23,7 @@ birth_year = int(DOB[4:])
 # and revaulting age in years if correction needed
 
 agey = int(c_year - birth_year)
-if c_month > birth_month:
+if c_month >= birth_month:
     agem = int(c_month-birth_month)
 else:
     agey -= 1
@@ -31,7 +31,7 @@ else:
 
 # calculating age in days and revaluating age in months as required
 
-if c_date > birth_date:
+if c_date >= birth_date:
     aged = c_date-birth_date
 else:
     agem -= 1
